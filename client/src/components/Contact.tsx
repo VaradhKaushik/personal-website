@@ -74,12 +74,12 @@ ${data.message}
   }
 
   return (
-    <section id="contact" className="section py-20 bg-gray-50">
+    <section id="contact" className="section py-20 bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-2">Get In Touch</h2>
+          <h2 className="text-3xl font-bold text-white mb-2">Get In Touch</h2>
           <div className="w-20 h-1 bg-primary rounded"></div>
-          <p className="text-gray-600 mt-4 text-center max-w-2xl">
+          <p className="text-gray-300 mt-4 text-center max-w-2xl">
             Feel free to contact me for any work inquiries, collaboration opportunities, or just to say hello.
           </p>
         </div>
@@ -88,16 +88,16 @@ ${data.message}
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {/* Contact Information */}
             <FadeInSection className="md:col-span-2">
-              <div className="bg-white p-6 rounded-lg shadow-md h-full">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-6 border-b border-gray-200 pb-2">Contact Information</h3>
+              <div className="bg-gray-800 p-6 rounded-lg shadow-md h-full">
+                <h3 className="text-2xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Contact Information</h3>
                 
                 <ul className="space-y-6">
                   <li className="flex items-start">
-                    <div className="bg-blue-100 p-3 rounded-full text-primary mr-4">
+                    <div className="bg-gray-700 p-3 rounded-full text-primary mr-4">
                       <i className="fas fa-envelope"></i>
                     </div>
                     <div>
-                      <h4 className="text-gray-700 font-medium">Email</h4>
+                      <h4 className="text-gray-300 font-medium">Email</h4>
                       <a href="mailto:john.doe@example.com" className="text-primary hover:text-secondary transition-colors duration-300">
                         john.doe@example.com
                       </a>
@@ -105,11 +105,11 @@ ${data.message}
                   </li>
                   
                   <li className="flex items-start">
-                    <div className="bg-blue-100 p-3 rounded-full text-primary mr-4">
+                    <div className="bg-gray-700 p-3 rounded-full text-primary mr-4">
                       <i className="fas fa-phone"></i>
                     </div>
                     <div>
-                      <h4 className="text-gray-700 font-medium">Phone</h4>
+                      <h4 className="text-gray-300 font-medium">Phone</h4>
                       <a href="tel:+1234567890" className="text-primary hover:text-secondary transition-colors duration-300">
                         (123) 456-7890
                       </a>
@@ -117,23 +117,23 @@ ${data.message}
                   </li>
                   
                   <li className="flex items-start">
-                    <div className="bg-blue-100 p-3 rounded-full text-primary mr-4">
+                    <div className="bg-gray-700 p-3 rounded-full text-primary mr-4">
                       <i className="fas fa-map-marker-alt"></i>
                     </div>
                     <div>
-                      <h4 className="text-gray-700 font-medium">Location</h4>
-                      <p className="text-gray-600">San Francisco, California</p>
+                      <h4 className="text-gray-300 font-medium">Location</h4>
+                      <p className="text-gray-400">San Francisco, California</p>
                     </div>
                   </li>
                   
                   <li>
-                    <h4 className="text-gray-700 font-medium mb-3">Social Profiles</h4>
+                    <h4 className="text-gray-300 font-medium mb-3">Social Profiles</h4>
                     <div className="flex space-x-4">
                       <motion.a 
                         href="https://linkedin.com/" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors duration-300 p-3 rounded-full"
+                        className="bg-gray-700 text-primary hover:bg-primary hover:text-white transition-colors duration-300 p-3 rounded-full"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                       >
@@ -143,7 +143,7 @@ ${data.message}
                         href="https://github.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors duration-300 p-3 rounded-full"
+                        className="bg-gray-700 text-primary hover:bg-primary hover:text-white transition-colors duration-300 p-3 rounded-full"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                       >
@@ -153,7 +153,7 @@ ${data.message}
                         href="https://twitter.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors duration-300 p-3 rounded-full"
+                        className="bg-gray-700 text-primary hover:bg-primary hover:text-white transition-colors duration-300 p-3 rounded-full"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                       >
@@ -163,7 +163,7 @@ ${data.message}
                         href="https://medium.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors duration-300 p-3 rounded-full"
+                        className="bg-gray-700 text-primary hover:bg-primary hover:text-white transition-colors duration-300 p-3 rounded-full"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                       >
@@ -177,8 +177,8 @@ ${data.message}
             
             {/* Contact Form */}
             <FadeInSection className="md:col-span-3">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-6 border-b border-gray-200 pb-2">Send Me a Message</h3>
+              <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 className="text-2xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Send Me a Message</h3>
                 
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
