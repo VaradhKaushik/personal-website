@@ -40,7 +40,7 @@ export default function Header() {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 bg-white shadow-md z-50 transition-all duration-300 ${scrolled ? 'py-2' : 'py-4'}`}>
+    <header className={`fixed top-0 left-0 right-0 bg-gray-900 shadow-md z-50 transition-all duration-300 ${scrolled ? 'py-2' : 'py-4'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#home" className="text-2xl font-bold text-primary flex items-center">
@@ -53,7 +53,7 @@ export default function Header() {
               <a 
                 key={item.name}
                 href={item.href} 
-                className="text-gray-700 hover:text-primary font-medium transition duration-200"
+                className="text-gray-300 hover:text-primary font-medium transition duration-200"
               >
                 {item.name}
               </a>
@@ -63,7 +63,7 @@ export default function Header() {
           {/* Mobile Navigation Button */}
           <button 
             aria-label="Toggle menu"
-            className="md:hidden text-gray-700 hover:text-primary"
+            className="md:hidden text-gray-300 hover:text-primary"
             onClick={toggleMenu}
           >
             <i className="fas fa-bars text-2xl"></i>
@@ -77,14 +77,14 @@ export default function Header() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white pb-4"
+            className="md:hidden bg-gray-800 pb-4"
           >
             <nav className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a 
                   key={item.name}
                   href={item.href} 
-                  className="text-gray-700 hover:text-primary font-medium transition duration-200 px-4 py-2"
+                  className="text-gray-300 hover:text-primary font-medium transition duration-200 px-4 py-2"
                   onClick={closeMenu}
                 >
                   {item.name}

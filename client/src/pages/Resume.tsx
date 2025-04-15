@@ -25,7 +25,7 @@ export default function Resume() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-gray-50 text-gray-800 min-h-screen"
+      className="bg-gray-950 text-gray-200 min-h-screen"
     >
       <Header />
       <Hero />
