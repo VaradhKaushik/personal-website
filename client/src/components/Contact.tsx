@@ -37,16 +37,27 @@ export default function Contact() {
     setIsSubmitting(true);
     
     try {
-      // This is just a placeholder as we don't have a real backend
-      // In a real application, this would send the data to a server
+      // This is configured for static hosting
+      // For GitHub Pages, we'll use a client-side approach
       console.log("Form submission data:", data);
       
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Create a mailto link with the form data
+      const subject = encodeURIComponent(data.subject);
+      const body = encodeURIComponent(`
+Name: ${data.name}
+Email: ${data.email}
+
+Message:
+${data.message}
+      `);
       
+      // Open the user's email client with pre-filled data
+      window.open(`mailto:john.doe@example.com?subject=${subject}&body=${body}`);
+      
+      // Show success message
       toast({
-        title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
+        title: "Email client opened!",
+        description: "Your message has been prepared. Please send the email from your email client.",
         variant: "default",
       });
       
@@ -54,7 +65,7 @@ export default function Contact() {
     } catch (error) {
       toast({
         title: "Error",
-        description: "There was a problem sending your message. Please try again.",
+        description: "There was a problem preparing your message. Please try again or email directly.",
         variant: "destructive",
       });
     } finally {

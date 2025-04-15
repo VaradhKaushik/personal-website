@@ -55,7 +55,7 @@ export default function Hero() {
                 Get in Touch
               </motion.a>
               <motion.a 
-                href="/resume.pdf" 
+                href="./assets/john-doe-resume.pdf" 
                 download
                 className="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition duration-300 shadow-md flex items-center"
                 whileHover={{ scale: 1.05 }}
