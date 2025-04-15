@@ -20,6 +20,9 @@ jobs:
       - name: Install Dependencies 📦
         run: npm install
 
+      - name: Verify Vite Installation
+        run: npm install vite --save-dev
+
       - name: Build 🔧
         run: vite build --config vite.config.github.ts
 
